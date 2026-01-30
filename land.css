@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #0f172a;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* ================= HERO ================= */
+.hero {
+    /* Background image + gradient overlay */
+    background: 
+        linear-gradient(rgba(37, 99, 235, 0.6), rgba(30, 64, 175, 0.6)),
+        url("blue.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content {
+    display: inline-block;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2); /* semi-transparent */
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Button hover effect */
+.hero button {
+    padding: 12px 30px;
+    border: none;
+    background: white;
+    color: #1e40af;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ================= FEATURES ================= */
+.features {
+    padding: 60px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Hover lift effect for feature boxes */
+.box {
+    width: 220px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(37,99,235,0.2);
+}
+
+/* ================= TECH ================= */
+.tech {
+    background: #f1f5f9;
+    text-align: center;
+    padding: 40px;
+}
+
+.tech h2 {
+    margin-bottom: 10px;
+}
+
+/* ================= CTA ================= */
+.cta {
+    background: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.cta button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: none;
+    background: white;
+    color: #1e40af;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.cta button:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .feature-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+}
